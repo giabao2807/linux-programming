@@ -1,0 +1,54 @@
+    1  ls
+    2  cd desktop
+    3  pwd desktop
+    4  ls
+    5  man
+    6  man ls
+    7  cd Desktop
+    8  mkdir LinuxOS
+    9  cd LinuxOS
+   10  mkdir Lab1
+   11  cd Lab1
+   12  ls
+   13  pwd
+   14  touch file1.txt
+   15  cat file1.txt
+   16  ls -l
+   17  sl
+   18  sudo apt install sl
+   19  cowsay "hello, minhla gia bao ne" >> file1.txt
+   20  sudo apt install cowsay
+   21  sl
+   22  cowsay "hello,minh la gia bao ne" >> file1.txt
+   23  history > file2.txt
+   24  figlet "Enjoy LinuxOS" >> file2.txt
+   25  figlet "Enjoy linuxOS" >> file2.txt
+   26  sudo apt install figlet 
+   27  figlet "Enjoy linuxOS" >> file2.txt
+   28  cat file1 file2 > lab1DinhGiaBao.txt
+   29  cat file1.txt file2.txt > lab1DinhGiaBao.txt
+   30  mv lab1DinhGiaBao.txt lab1DinhGiaBao19N10.txt
+   31  exit
+   32  cd Desktop
+   33  ls
+   34  cd LinuxOS
+   35  ls
+   36  cd Lab1
+   37  ls -l
+   38  cd LinuxOS
+   39  ls
+   40  mkdir Lab2
+   41  cd Lab2
+   42  touch filmdb.txt
+   43  cat filmdb.txt
+   44  sort -k 2 filmdb.txt
+   45  sort -nk 2 filmdb.txt
+   46  sort -k 2n filmdb.txt
+   47  grep "My" filmdb.txt
+   48  grep "Viet Nam" filmdb.txt
+   49  cat file1.txt
+   50  cat ./LinuxOS/Lab1/file1.txt
+   51  cat /home/giabao/Desktop/LinuxOS/Lab1
+   52  cat /home/giabao/Desktop/LinuxOS/Lab1/file1.txt
+   53  history
+   54  history > lab2DinhGiaBao19Nh10

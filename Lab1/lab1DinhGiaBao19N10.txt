@@ -1,0 +1,40 @@
+gia bao ne.
+total 3
+-rw-rw-r-- 1 giabao giabao  221 Thg 9  13 15:04 file1.txt
+ __________________________
+< hello,minh la gia bao ne >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+    1  ls
+    2  cd desktop
+    3  pwd desktop
+    4  ls
+    5  man
+    6  man ls
+    7  cd Desktop
+    8  mkdir LinuxOS
+    9  cd LinuxOS
+   10  mkdir Lab1
+   11  cd Lab1
+   12  ls
+   13  pwd
+   14  touch file1.txt
+   15  cat file1.txt
+   16  ls -l
+   17  sl
+   18  sudo apt install sl
+   19  cowsay "hello, minhla gia bao ne" >> file1.txt
+   20  sudo apt install cowsay
+   21  sl
+   22  cowsay "hello,minh la gia bao ne" >> file1.txt
+   23  history > file2.txt
+ ____        _               _ _                   ___  ____  
+| ____|_ __  (_) ___  _   _  | (_)_ __  _   ___  __/ _ \/ ___| 
+|  _| | '_ \ | |/ _ \| | | | | | | '_ \| | | \ \/ / | | \___ \ 
+| |___| | | || | (_) | |_| | | | | | | | |_| |>  <| |_| |___) |
+|_____|_| |_|/ |\___/ \__, | |_|_|_| |_|\__,_/_/\_\\___/|____/ 
+           |__/       |___/                                    
