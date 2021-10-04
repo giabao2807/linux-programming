@@ -15,7 +15,8 @@ do
 			;;
 		w|W)	who
 			;;
-		q|Q)	exit 0
+		q|Q)	echo "Goodbye"
+			exit 0
 			;;
 		*)	echo "Invalid option; Try running the programming again"
 			;;
