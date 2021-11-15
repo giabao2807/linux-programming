@@ -31,16 +31,15 @@ int main()
     int n;
     int prime;
     printf("\nNhap n:");
-    scanf("%d", &n);
-    /* Bắt đầu luồng tính toán số nguyên tố thứ n. */
+    scanf("%d", &n); /* Bắt đầu luồng tính toán số nguyên tố thứ n. */
     pthread_create(&thread, NULL,
                    &compute_prime, &n);
+
     /* Thực hiện vài việc ở đây... */
     /* Chờ luồng tính số nguyên tố hoàn thành, và
 lấy kết quả trả về.*/
     pthread_join(thread, (void *)&prime);
     /* In ra số nguyên tố thứ n. */
-    printf("So nguyen to thu % d la % d.\n", n,
-           prime);
+    printf("So nguyen to thu %d la %d.\n", n, prime);
     return 0;
 }
