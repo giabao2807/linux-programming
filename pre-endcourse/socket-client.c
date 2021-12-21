@@ -4,8 +4,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 
-/* Ghi TEXT len file socket. Chi ra boi SOCKET_FD */
-void write_text(int socket_fd, const char *text)
+/* Ghi TEXT len file socket. Chi ra boi SOCKET_FD */ void write_text(int socket_fd, const char *text)
 {
     /* Ghi so byte cua string, bao gom gia tri ket thuc NUL */ int length = strlen(text) + 1;
     write(socket_fd, &length, sizeof(length));

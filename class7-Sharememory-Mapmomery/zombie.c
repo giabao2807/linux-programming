@@ -13,6 +13,7 @@ int main()
     }
     else
     {
+        printf("Day la tien trinh con. Ket thuc\n");
         exit(0); /*Day la tien trinh con.Ket thuc */
     }
     return 0;

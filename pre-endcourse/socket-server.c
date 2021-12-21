@@ -20,9 +20,7 @@ int server(int client_socket)
         printf("%s\n", text);
         // Giai phong vung dem
         free(text);
-        // Neu Client gui message "quit", Thoat
-        if (!strcmp(text, "quit"))
-            return 1;
+        // Neu Client gui message "quit", Thoat if(!strcmp(text,"quit")) return 1;
     }
 }
 int main(int argc, char *const argv[])
