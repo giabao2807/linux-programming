@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void *compute_prime(void *arg)
+void *execute(void *arg)
 {
 
     int pri = 2;
@@ -49,7 +49,7 @@ int main()
     {
         int *a = new int;
         *(a) = i;
-        rc = pthread_create(pthread_arr + i - 1, nullptr, &compute_prime, a);
+        rc = pthread_create(pthread_arr + i - 1, nullptr, &execute, a);
         if (rc)
         {
             cout << "\n Error: Khong the tao thread! " << rc << endl;

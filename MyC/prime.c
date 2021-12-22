@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <pthread.h>
 /*Hàm tính toán trả về số nguyên tố thứ n, n là là giá trị được trỏ bởi
-*arg. */
-void *compute_prime(void *arg)
+ *arg. */
+void *execute(void *arg)
 {
     int pri = 2;
     int n = *((int *)arg);
@@ -34,7 +34,7 @@ int main()
     printf("\nNhap n:");
     scanf("%d", &n);
     /* Bắt đầu luồng tính toán số nguyên tố thứ n. */
-    pthread_create(&thread, NULL, &compute_prime, &n);
+    pthread_create(&thread, NULL, &execute, &n);
     /* Thực hiện vài việc ở đây... */
     /* Chờ luồng tính số nguyên tố hoàn thành, và
 lấy kết quả trả về.*/

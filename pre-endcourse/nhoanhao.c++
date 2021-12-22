@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void *compute_prime(void *arg)
+void *execute(void *arg)
 {
 
     int rs = 6;
@@ -56,7 +56,7 @@ int main()
     {
         int *a = new int;
         *(a) = i;
-        rc = pthread_create(&threads[i - 1], nullptr, &compute_prime, a);
+        rc = pthread_create(&threads[i - 1], nullptr, &execute, a);
         if (rc)
         {
             cout << "\n Error: Khong the tao thread! " << rc << endl;

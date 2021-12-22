@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-void *compute_prime(void *arg)
+void *execute(void *arg)
 {
 
     int pri = 2;
@@ -46,7 +46,7 @@ int main()
     pthread_t threadid;
     int *a = new int;
     *(a) = n;
-    rc = pthread_create(&threadid, NULL, &compute_prime, a);
+    rc = pthread_create(&threadid, NULL, &execute, a);
     if (rc)
     {
         cout << "\n Error: Khong the tao thread! " << rc << endl;

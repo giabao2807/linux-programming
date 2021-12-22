@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void *compute_prime(void *arg)
+void *execute(void *arg)
 {
 
     int pri = 2;
@@ -46,7 +46,7 @@ int main()
     {
         int *a = new int;
         *(a) = i;
-        pthread_create(pthread_arr + i - 1, nullptr, &compute_prime, a);
+        pthread_create(pthread_arr + i - 1, nullptr, &execute, a);
     }
     for (int i = 1; i <= n; i++)
     {
